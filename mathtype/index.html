@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <style>
+        div {
+            word-wrap: break-word;
+        }
+        #output {
+            border:1px solid olive
+        }
+        form {
+            display:inline-block
+        }
+        </style>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+        <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    </head>
+    <body>
+        Press <i>Insert Formula</i> to insert an Equation 3.0 &amp; MathTpe formula.
+        <br />
+        <br />
+        Formulas do not align well with text in <i>Editing view</i> but are well aligned in <i>Reading view</i>.
+        <br />
+        <br />
+        
+        Open the Word dcoument <a href="MathType-formula.docx">MathType-formula.docx</a> and press <i>Get Html</i> and <i>Get Ooxml</i> to get the formula.
+        <br />
+        <br />
+        <button id="insertOoxml">Insert Formula</button>
+        <div id="supportedVersion"/>
+        <h2>Output</h2>
+        <button id="getSelection">Get selection</button>
+        <button id="getOoxml">Get ooxml</button>
+        <br />
+        <textarea style="width:100%;height:300px" id="output"></textarea>
+        <h2>Tools</h2>
+        <form id="reloadForm"><button id="reload">Reload Add-In</button></form>
+        <h2>Info</h2>
+        <a href="manifest.xml">manifest.xml</a> <a href="manifest.localhost.xml">manifest.localhost.xml</a>
+        <br />
+        <a href="https://dev.office.com/reference/add-ins/word/word-add-ins-reference-overview">Word API</a> <a href="http://officeopenxml.com/drwOverview.php">Ooml format</a>
+        <br />
+        Home url: <span id="url">&nbsp;</div>
+        <script src="script.js"></script>
+    </body>
+</html>
