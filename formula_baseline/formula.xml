@@ -21,6 +21,10 @@
                 <w:body>
                     <w:p w:rsidR="00000000" w:rsidRDefault="00787668">
                         <w:r>
+                            <w:rPr>
+                                <w:noProof/>
+                                <w:position w:val="-20"/>
+                            </w:rPr>
                             <w:drawing>
                                 <wp:inline distT="0" distB="0" distL="0" distR="0" wp14:anchorId="2267D142" wp14:editId="79B6876B">
                                     <wp:extent cx="438150" cy="333375" />
